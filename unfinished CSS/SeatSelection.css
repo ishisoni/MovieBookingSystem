@@ -1,0 +1,127 @@
+html {
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/*
+ * This is the table that shows default availability for doctors
+ */
+
+.availability-table
+{
+    width: 1px;
+    margin-left:auto;
+    margin-right:auto;
+    border: none;
+    width: 50px;
+}
+
+.availability-table thead th:first-child {
+    pointer-events: none;
+    background: white;
+    border: none;
+}
+
+.availability-table td {
+    vertical-align: middle;
+
+}
+
+.availability-table th
+{
+    text-align: center;
+    width: 50px;
+}
+
+/*
+ * Custom checkbox CSS, below are three color classes, day, evening, and night
+ */
+.availability-checkbox {
+    min-height: 1rem;
+    padding-left: 0;
+    margin-right: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.availability-checkbox .custom-control-indicator {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 10px;
+    background-color: #818181;
+    border-radius: 100px;
+    margin-right: 20px;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease;
+    vertical-align: middle;
+    margin: 0 16px;
+    box-shadow: none;
+}
+
+.availability-checkbox .custom-control-indicator:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: #f1f1f1;
+    border-radius: 21px;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
+    left: -2px;
+    top: -4px;
+    -webkit-transition: left .3s ease, background .3s ease, box-shadow .1s ease;
+    -moz-transition: left .3s ease, background .3s ease, box-shadow .1s ease;
+    -o-transition: left .3s ease, background .3s ease, box-shadow .1s ease;
+    transition: left .3s ease, background .3s ease, box-shadow .1s ease;
+}
+
+.availability-checkbox .custom-control-input:focus ~ .custom-control-indicator {
+    box-shadow: none !important;
+}
+
+/*
+ * Day color codes
+ */
+.checkbox-day .custom-control-input:checked ~ .custom-control-indicator {
+    background-color: #428bca;
+    background-image: none;
+    box-shadow: none !important;
+}
+.checkbox-day .custom-control-input:checked ~ .custom-control-indicator:after {
+    background-color: #428bca;
+    left: 15px;
+}
+
+/*
+ * Evening color codes
+ */
+.checkbox-evening .custom-control-input:checked ~ .custom-control-indicator {
+    background-color: #428bca;
+    background-image: none;
+    box-shadow: none !important;
+}
+
+.checkbox-evening .custom-control-input:checked ~ .custom-control-indicator:after {
+    background-color: #428bca;
+    left: 15px;
+}
+
+/*
+ * Night color codes
+ */
+.checkbox-night .custom-control-input:checked ~ .custom-control-indicator {
+    background-color: #428bca;
+    background-image: none;
+    box-shadow: none !important;
+}
+.checkbox-night .custom-control-input:checked ~ .custom-control-indicator:after {
+    background-color: #428bca;
+    left: 15px;
+}
+.newCheckbox {
+    width: 45px;
+    height: 45px;
+}

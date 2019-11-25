@@ -1,0 +1,157 @@
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<head>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/cardStyle.css">	
+</head>
+<!------ Include the above in your HEAD tag ---------->
+
+<nav class="navbar navbar-expand navbar-dark bg-dark sticky-top border-bottom border-dark"> <a href="#menu-toggle" id="menu-toggle" class="navbar-brand"><span class="navbar-toggler-icon"></span></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+		<div class="collapse navbar-collapse" id="navbarsExample02">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"> <a class="nav-link" href="homepageTemp.php">Home <span class="sr-only">(current)</span></a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../src/Registration.html">Register</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../src/Login.html">Login</a> </li>
+				<a class="navbar-brand text-light navbar-center"> Movie Booking System </a>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+
+				<form class="searchForm" >
+					<input class="inputBar" type="text" placeholder="Search" name="searchMovies">
+					<button class="magGlass" type="submit"><i class="searchIcon fa fa-search"></i></button>
+				</form> 
+			</ul>
+		</div>
+	</nav>
+
+<div align = "left">
+    <div id="wrapper">
+	
+	<div id="sidebar-wrapper" class="bg-dark border-right border-dark">
+        <ul class="sidebar-nav navbar-dark bg-dark">
+            <li> <a href="../src/SearchMovie.html"> Search Movies </a> </li>
+            <li> <a href="#">Dashboard</a> </li>
+            <li> <a href="#">Book Movie</a> </li>
+            <li> <a href="#">User Profile</a> </li>
+            <li> <a href="#">New Movies</a> </li>
+            <li> <a href="#">Upcoming promotions</a> </li>
+            <li> <a href="#">Movie Theatres</a> </li>
+            <li> <a href="#">Contact</a> </li>
+        </ul>
+    </div> <!-- /#sidebar-wrapper -->
+       <header class="text-center pt-3 pb-2 ">
+
+			<div class="container">
+				<p class="font-weight-light text-white" align="left"></p>
+			</div>
+		</header>
+		
+		
+        <div class="container-fluid">
+		
+		<div>
+        <div>
+            <div>
+            <h1> Review Order</h1>
+            </div>
+        </div>
+    </div>
+            <form class="form-horizontal" method="post" action="">
+                <div>
+                    <!--REVIEW ORDER-->
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="pull-left"><small><a class="afix-1" href="#">Edit Cart</a></small></div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group row">
+                                <div class="col-xs-6" style="margin:30px;">
+                                    <img class="img-responsive " style="width:200px; height:275px;" src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1562875459/amc-cdn/production/2/movies/52600/52611/PosterDynamic/83711.jpg" />
+                                </div>
+								<div class="col-xs-6" style="margin:30px;">
+									<div>
+										<div class="col-xs-12">Abominable[Kid]</div>
+										<div class="col-xs-12"><small>Quantity:<span>2</span></small></div>
+									</div>
+									<div>
+										<h6><span>$</span>12.00</h6>
+									</div>
+									<div>
+										<div class="col-xs-12">Abominable[Adult]</div>
+										<div class="col-xs-12"><small>Quantity:<span>1</span></small></div>
+									</div>
+									<div>
+										<h6><span>$</span>10.00</h6>
+									</div>
+								</div>
+                            </div>
+                            <div class="form-group"><hr /></div>
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <strong>Subtotal</strong>
+                                    <div class="pull-right"><span>$</span><span>42.00</span></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <small>Promo Code</small>
+                                    <input type="text" name="child" value = "promocode">
+                                    <div class="pull-right"><span>-$5.00</span></div>
+                                </div>
+                            </div>
+                            <div class="form-group"><hr /></div>
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <strong>Order Total</strong>
+                                    <div class="pull-right"><span>$</span><span>37.00</span></div>
+                                    <br>
+                                    <a class="nav-link" href="../.idea/HomepageTemp.html">Cancel Order</a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a class="nav-link" href="../.idea/Checkout.html">Proceed to Checkout</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--REVIEW ORDER END-->
+
+                </div>
+
+            </form>
+        </div>
+        <div class="row cart-footer">
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../../Downloads/bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../../Downloads/bootstrap-3.3.7/docs/dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../../Downloads/bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script>
+    $(function(){
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+/*
+        $(window).resize(function(e) {
+            if($(window).width()<=768){
+                $("#wrapper").removeClass("toggled");
+            }else{
+                $("#wrapper").addClass("toggled");
+            }
+        });*/
+    });
+
+</script>

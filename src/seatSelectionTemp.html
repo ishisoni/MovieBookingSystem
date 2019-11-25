@@ -1,0 +1,395 @@
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<head>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/cardStyle.css">	
+	<!--<link rel="stylesheet" href="../css/styling.css"> -->
+</head>
+
+
+	<nav class="navbar navbar-expand navbar-dark bg-dark sticky-top border-bottom border-dark"> <a href="#menu-toggle" id="menu-toggle" class="navbar-brand"><span class="navbar-toggler-icon"></span></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+		<div class="collapse navbar-collapse" id="navbarsExample02">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"> <a class="nav-link" href="homepageTemp.php">Home <span class="sr-only">(current)</span></a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../src/Registration.html">Register</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../src/Login.html">Login</a> </li>
+				<a class="navbar-brand text-light navbar-center"> Movie Booking System </a>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+
+				<form class="searchForm" >
+					<input class="inputBar" type="text" placeholder="Search" name="searchMovies">
+					<button class="magGlass" type="submit"><i class="searchIcon fa fa-search"></i></button>
+				</form> 
+			</ul>
+		</div>
+	</nav>
+
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="bg-dark border-right border-dark">
+        <ul class="sidebar-nav navbar-dark bg-dark">
+            <li> <a href="../src/SearchMovie.html"> Search Movies </a> </li>
+            <li> <a href="#">Dashboard</a> </li>
+            <li> <a href="#">Book Movie</a> </li>
+            <li> <a href="#">User Profile</a> </li>
+            <li> <a href="#">New Movies</a> </li>
+            <li> <a href="#">Upcoming promotions</a> </li>
+            <li> <a href="#">Movie Theatres</a> </li>
+            <li> <a href="#">Contact</a> </li>
+        </ul>
+    </div> <!-- /#sidebar-wrapper -->
+			<header class="text-center pt-3 pb-2 ">
+
+			<div class="container">
+				<p class="font-weight-light text-white" align="left"><font size = "5"></font></p>
+			</div>
+		</header>
+<style>
+	.seat {
+		background-color: #333;
+		color: white;
+		border-radius: 10px;
+		width: 120px;
+		height: 70px;
+		margin-left: 6px;
+		margin-right: 6px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 10px;
+		
+	}
+	.content-area {
+		margin-left: 5% !important;
+		margin-right: 5% !important;
+		padding: auto !important;
+	}
+	.pageContent {
+		padding-left: 10px;
+		padding-bottom: 2px;
+	}
+	.fa-times-circle {
+		padding-top: 4px;
+		padding-left: 4px;
+		color: red !important;
+	}
+	.fa-check-circle {
+		padding-top: 4px;
+		padding-left: 4px;
+		color: green !important;
+	}
+	.fa-shopping-cart {
+		padding-top: 4px;
+		padding-left: 4px;
+	}
+	h2 {
+	text-align: center;	
+	padding-right: 100px;
+	}
+</style>			
+	<div class="container-fluid">  
+		<h2> Seat Selection </h2>
+		<div class="content-area">
+			<div class="row rowA">
+				<div class="seat" >
+					<h4>Seat A1</h4>
+					<div class="row pageContent" id="A1">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="1" name="seats" value = "1">
+							<label class="custom-control-label" for="1">Closed<i class="fas fa-times-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat A2</h4>
+					<div class="row pageContent" id="A2">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="2" name="seats" value = "2">
+							<label class="custom-control-label" for="2">Closed<i class="fas fa-times-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat A3</h4>
+					<div class="row pageContent" id="A3">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="3" name="seats" value = "3">
+							<label class="custom-control-label" for="3">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat A4</h4>
+					<div class="row pageContent" id="A4">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="4" name="seats" value = "4">
+							<label class="custom-control-label" for="4">In Cart<i class="fas fa-shopping-cart"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat A5</h4>
+					<div class="row pageContent" id="A5">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="5" name="seats" value = "5">
+							<label class="custom-control-label" for="5">In Cart<i class="fas fa-shopping-cart"></i></label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row rowB">
+				<div class="seat">
+					<h4>Seat B1</h4>
+					<div class="row pageContent" id="B1">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="6" name="seats" value = "6">
+							<label class="custom-control-label" for="6">Closed<i class="fas fa-times-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat" id="A2">
+					<h4>Seat B2</h4>
+					<div class="row pageContent" id="B2">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="7" name="seats" value = "7">
+							<label class="custom-control-label" for="7">Closed<i class="fas fa-times-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat B3</h4>
+					<div class="row pageContent" id="B3">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="8" name="seats" value = "8">
+							<label class="custom-control-label" for="8">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat B4</h4>
+					<div class="row pageContent" id="B4">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="9" name="seats" value = "9">
+							<label class="custom-control-label" for="9">In Cart<i class="fas fa-shopping-cart"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat B5</h4>
+					<div class="row pageContent" id="B5">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="10" name="seats" value = "10">
+							<label class="custom-control-label" for="10">In Cart<i class="fas fa-shopping-cart"></i></label>
+						</div>
+					</div>
+				</div>			
+			</div>
+			<div class="row rowC">
+				<div class="seat">
+					<h4>Seat C1</h4>
+					<div class="row pageContent" id="C1">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="11" name="seats" value = "11">
+							<label class="custom-control-label" for="11">Closed<i class="fas fa-times-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat C2</h4>
+					<div class="row pageContent" id="C2">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="12" name="seats" value = "12">
+							<label class="custom-control-label" for="12">Closed<i class="fas fa-times-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat C3</h4>
+					<div class="row pageContent" id="C3">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="13" name="seats" value = "13">
+							<label class="custom-control-label" for="13">Closed<i class="fas fa-times-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat C4</h4>
+					<div class="row pageContent" id="C4">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="14" name="seats" value = "14">
+							<label class="custom-control-label" for="14">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat C5</h4>
+					<div class="row pageContent" id="C5">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="15" name="seats" value = "15">
+							<label class="custom-control-label" for="15">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row rowD">
+				<div class="seat">
+					<h4>Seat D1</h4>
+					<div class="row pageContent" id="D1">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="16" name="seats" value = "16">
+							<label class="custom-control-label" for="16">Closed<i class="fas fa-times-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat D2</h4>
+					<div class="row pageContent" id="D2">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="17" name="seats" value = "17">
+							<label class="custom-control-label" for="17">Closed<i class="fas fa-times-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat D3</h4>
+					<div class="row pageContent" id="A3">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="18" name="seats" value = "18">
+							<label class="custom-control-label" for="18">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat D4</h4>
+					<div class="row pageContent" id="D4">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="19" name="seats" value = "19">
+							<label class="custom-control-label" for="19">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat D5</h4>
+					<div class="row pageContent" id="D5">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="20" name="seats" value = "20">
+							<label class="custom-control-label" for="20">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row rowE">
+				<div class="seat">
+					<h4>Seat E1</h4>
+					<div class="row pageContent" id="E1">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="21" name="seats" value = "21">
+							<label class="custom-control-label" for="21">Closed<i class="fas fa-times-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat E2</h4>
+					<div class="row pageContent" id="E2">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="22" name="seats" value = "22">
+							<label class="custom-control-label" for="22">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat E3</h4>
+					<div class="row pageContent" id="E3">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="23" name="seats" value = "23">
+							<label class="custom-control-label" for="23">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat E4</h4>
+					<div class="row pageContent" id="E4">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="24" name="seats" value = "24">
+							<label class="custom-control-label" for="24">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat E5</h4>
+					<div class="row pageContent" id="E5">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="25" name="seats" value = "25">
+							<label class="custom-control-label" for="25">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row rowF">
+				<div class="seat">
+					<h4>Seat F1</h4>
+					<div class="row pageContent" id="F1">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="26" name="seats" value = "26">
+							<label class="custom-control-label" for="26">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat F2</h4>
+					<div class="row pageContent" id="F2">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="27" name="seats" value = "27">
+							<label class="custom-control-label" for="27">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat F3</h4>
+					<div class="row pageContent" id="F3">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="28" name="seats" value = "28">
+							<label class="custom-control-label" for="28">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat F4</h4>
+					<div class="row pageContent" id="F4">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="29" name="seats" value = "29">
+							<label class="custom-control-label" for="29">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+				<div class="seat">
+					<h4>Seat F5</h4>
+					<div class="row pageContent" id="F5">
+						<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="30" name="seats" value = "30">
+							<label class="custom-control-label" for="30">Open<i class="fas fa-check-circle"></i></label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "lowArea">
+				<a href="../.idea/OrderSummary.html" class="button">Submit</a>
+			</div>			
+		</div>
+	</div>
+</div>
+<script>
+    $(function(){
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    });
+</script>

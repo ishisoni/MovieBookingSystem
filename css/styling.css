@@ -1,0 +1,150 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  text-align: center;
+  font-size: 28px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left middle middle middle middle right' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+
+.middle {
+  
+	margin: 30px auto;
+	left: 0;
+	right:0;
+	width:70%;
+	padding: 30px;
+	background: #fff;
+	color: #6C757D;
+	text-align: left;
+	display: inline-block;
+	position: absolute;
+	box-sizing:border-box;
+	border-radius: 20px;
+	
+}
+
+
+
+.middle input{
+	width: 100%;
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #6C757D;
+	background: transparent;
+	outline: none;
+	height: 20px;
+	color: #6C757D;
+}
+
+.tinted {
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 5px 5px;
+}
+
+.tinted:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 255, 255, 0.5);
+  transition: all 0.3s linear;
+}
+
+.tinted:hover:before {
+  background: none;
+}
+
+.ManageShowtimes:before {
+  background: rgba(0, 0, 255, 0.5);
+}
+
+.ManageHalls:before {
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.ManageUsers:before {
+  background: rgba(0, 255, 0, 0.5);
+}
+
+.ManagePromotions:before {
+  background: rgba(255, 0, 240, 0.5);
+}
+
+.ViewReports:before {
+  background: rgba(255, 102, 0, 0.6);
+}
+
+.AddPromotionArea {
+	padding: 10px;
+	border: 5px solid gray;
+}
+
+
+
+#myInput {
+
+  width: 100%; /* Full-width */
+  font-size: 18px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#ManageList {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#ManageList li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: #6C757D; /* Add a #6C757D text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#ManageList li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+
+.tableContainer {
+	
+}

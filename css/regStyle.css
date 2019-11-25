@@ -1,0 +1,17 @@
+.reg{
+	margin:100px auto;
+	left: 0;
+	right:0;
+	width:70%;
+	border: none;
+	padding: 20px;
+	background: white;
+	color: #6C757D;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	box-sizing:border-box;
+	border-radius: 20px;
+	font-size: 25px;	
+	font-family: "Arial", Arial, Sans-serif;
+}

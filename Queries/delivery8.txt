@@ -1,0 +1,40 @@
+use cinemaDB;
+CREATE TABLE cinemas(
+	id INT AUTO_INCREMENT,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE showrooms(
+	id INT AUTO_INCREMENT,
+    cinemaID INT,
+    numberOfSeats INT,
+    FOREIGN KEY (cinemaID) REFERENCES cinemas(id),
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE movies(
+	id INT AUTO_INCREMENT,
+    title VARCHAR(50),
+    category VARCHAR(50),
+    movieCast VARCHAR(150),
+    director VARCHAR(50),
+    producer VARCHAR(50),
+    synopsis VARCHAR(200),
+    reviews VARCHAR(200),
+    trailerPic VARCHAR(500),
+    trailerVideo VARCHAR(500),
+    startDate DATE,
+    endDate DATE,
+    MPAA VARCHAR(50),
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE shows(
+    id INT AUTO_INCREMENT,
+    showroomID INT,
+    time VARCHAR(10),
+    movieID INT,
+    FOREIGN KEY (movieID) REFERENCES movies(id),
+    FOREIGN KEY (showroomID) REFERENCES showrooms(id),
+    PRIMARY KEY(id)
+);

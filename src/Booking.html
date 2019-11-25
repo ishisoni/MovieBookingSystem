@@ -1,0 +1,238 @@
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<head>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/cardStyle.css">	
+	<!--<link rel="stylesheet" href="../css/styling.css"> -->
+</head>
+
+
+	<nav class="navbar navbar-expand navbar-dark bg-dark sticky-top border-bottom border-dark"> <a href="#menu-toggle" id="menu-toggle" class="navbar-brand"><span class="navbar-toggler-icon"></span></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+		<div class="collapse navbar-collapse" id="navbarsExample02">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"> <a class="nav-link" href="homepageTemp.php">Home <span class="sr-only">(current)</span></a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../src/Registration.html">Register</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../src/Login.html">Login</a> </li>
+				<a class="navbar-brand text-light navbar-center"> Movie Booking System </a>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+
+				<form class="searchForm" >
+					<input class="inputBar" type="text" placeholder="Search" name="searchMovies">
+					<button class="magGlass" type="submit"><i class="searchIcon fa fa-search"></i></button>
+				</form> 
+			</ul>
+		</div>
+	</nav>
+
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="bg-dark border-right border-dark">
+        <ul class="sidebar-nav navbar-dark bg-dark">
+            <li> <a href="../src/SearchMovie.html"> Search Movies </a> </li>
+            <li> <a href="#">Dashboard</a> </li>
+            <li> <a href="#">Book Movie</a> </li>
+            <li> <a href="#">User Profile</a> </li>
+            <li> <a href="#">New Movies</a> </li>
+            <li> <a href="#">Upcoming promotions</a> </li>
+            <li> <a href="#">Movie Theatres</a> </li>
+            <li> <a href="#">Contact</a> </li>
+        </ul>
+    </div> <!-- /#sidebar-wrapper -->
+			<header class="text-center pt-3 pb-2 ">
+
+			<div class="container">
+				<p class="font-weight-light text-white" align="left"><font size = "5"></font></p>
+			</div>
+		</header>
+<style>
+ .dateArea {
+			border-radius: 10px;
+ }
+ .content-left {
+		padding: 5px;
+		padding-left: 10px;
+        background-color:#333;
+		border-radius: 10px;
+		margin-right: 20px;
+		color:white;
+		border: 2px solid #111;
+    }
+	input[type=date]{
+			height: 40px;
+			color:white;
+	}
+.timeArea {
+		border-radius: 10px;
+		margin: 0 !important;
+		padding: 5px;
+		margin-right: 5px !important;
+		border: 2px solid #333 !important;		
+}
+ h2 {
+	text-align: center;	
+ }
+ .img-responsive {
+	width: 260px;
+	margin-right: 5px;
+	border: 3px solid #333;
+	margin-left: 20px;
+ }
+ .cartArea {
+ 		border-radius: 10px !important;
+		border: 2px solid #333 !important;
+		padding: 8px;
+ }
+ .bookedItem {
+	font-size: 10px;
+ }
+ dd {
+	padding-left: 14px;
+ }
+ .mainArea, .content-lower{
+ margin-left: 0px !important;
+ 
+ }
+ .promoArea{
+   background-color: #e51937;
+		border-radius: 10px;
+		margin-top: 5px;
+		padding: 10px;
+		border: 2px solid #333 !important;	
+ }
+ .container-fluid {
+	width: 88% !important;
+ 
+ }
+ .content-lower {
+	border-radius: 10px;
+	margin: auto !important;
+	margin-left: 100px !important;
+	width: 60%;
+	padding: 20px;
+	padding-left: 40px;
+	
+ }
+ .selectSeats {
+	width: 100%;
+ }
+ 
+.fa-chair{
+color: #e51937 !important;
+border-style: none !important;
+cursor: pointer !important;  
+font-size: 20px;
+padding:3px !important;
+margin-right: 3px !important;
+
+} 
+.fa-shopping-cart{
+color: blue !important;
+border-style: none !important;
+cursor: pointer !important;  
+font-size: 18px;
+padding:3px !important;
+margin-right: 3px !important;
+
+} 
+
+</style>			
+	<div class="container-fluid">  
+	<form>
+		<div class="row content-whole">
+			<div class="posterArea">
+				<img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1571433255/amc-cdn/production/2/movies/59000/59009/PosterDynamic/94016.jpg" class="img-responsive" alt="a" />
+			</div>
+			<div class="contentArea">
+				<h2> Booking </h2>
+				<div class="row mainArea">
+					<div class="content-left">
+						<div class="dateArea">
+						  <b>Select a viewing Date:</b><input type="date" name="bookDate" min='2019-02-10' max='2019-2-24'>
+						</div>
+						<div class="dateInfo">
+							<p>From Febuary 10 2019 to Febuary 24 2019</p>
+						</div>
+						<div class="ticketTypeArea">
+								<b>Select an age group:</b>
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="child" name="age" value = "child">
+								  <label class="custom-control-label" for="child">Child (Age 0-17)</label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="adult" name="age" value = "adult">
+								  <label class="custom-control-label" for="adult">Adult (Age 18-49)</label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="elder" name="age" value = "elder">
+								  <label class="custom-control-label" for="elder">Elder (Age 50+)</label>
+								</div>
+						</div>
+					</div>	
+					<div class="content-right">
+						<div class="row">
+							<div class="timeArea">
+							Available Times:
+							<div class="custom-control custom-radio">
+							  <input type="radio" class="custom-control-input" id="12" name="times" value = "11:00">
+							  <label class="custom-control-label" for="12">12:00 PM</label>
+							</div>
+							<div class="custom-control custom-radio">
+							  <input type="radio" class="custom-control-input" id="3" name="times" value = "3:00">
+							  <label class="custom-control-label" for="3">3:00 PM</label>
+							</div>
+							<div class="custom-control custom-radio">
+							  <input type="radio" class="custom-control-input" id="6" name="times" value = "5:00">
+							  <label class="custom-control-label" for="6">6:00 PM</label>
+							</div>
+							<div class="custom-control custom-radio">
+							  <input type="radio" class="custom-control-input" id="8" name="times" value = "7:00">
+							  <label class="custom-control-label" for="8">8:00 PM</label>
+							</div>
+							</div>
+							<div class="cartArea">
+								<p><b>Cart:<i class="fas fa-shopping-cart"></i></b></p>
+								<div class="bookedItem">
+									<dt>Child || Arctic Dogs || Seat C4</dt>
+									<dd>Febuary 15 1999 || 3:00 PM</dd>
+									<dt>Adult || Arctic Dogs || Seat C5</dt>
+									<dd>Febuary 15 1999 || 3:00 PM</dd>
+									<dt>Adult || Arctic Dogs || Seat C6</dt>
+									<dd>Febuary 15 1999 || 3:00 PM</dd>
+									<dt>Elder || Arctic Dogs || Seat C7</dt>
+									<dd>Febuary 15 1999 || 3:00 PM</dd>
+									<dt>Elder || Arctic Dogs || Seat C8</dt>
+									<dd>Febuary 15 1999 || 3:00 PM</dd>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row content-lower">
+					<div class="selectSeats">
+						<button type="submit" class="submitButton AddCart  btn-block btn btn-dark"><i class=" fas fa-chair"></i>Select Seat</button> 
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	
+	</div>
+	</form>
+</div>
+<script>
+    $(function(){
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    });
+</script>

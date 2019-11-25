@@ -1,0 +1,166 @@
+	<html>
+	<!-- <link rel="stylesheet" href="C:\Users\Kirti\Downloads\regis.css"> -->
+	<!-- <link rel="stylesheet" href="C:\Users\Kirti\Downloads\Movie-Cinema-rbm41574-patch-1\Movie-Cinema-rbm41574-patch-1\css\regis.css"> -->
+	<!--	 <link rel="stylesheet" href="..\css\homepage.css">-->
+	
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!------ Include the above in your HEAD tag ---------->
+
+	<head>
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../css/navigation.css">
+		<link rel="stylesheet" href="../css/cardStyle.css">	
+
+	</head>
+		
+	<nav class="navbar navbar-expand navbar-dark bg-dark sticky-top border-bottom border-dark"> <a href="#menu-toggle" id="menu-toggle" class="navbar-brand"><span class="navbar-toggler-icon"></span></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+		<div class="collapse navbar-collapse" id="navbarsExample02">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"> <a class="nav-link" href="homepageTemp.php">Home <span class="sr-only">(current)</span></a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../src/Registration.html">Register</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../src/Login.html">Login</a> </li>
+				<a class="navbar-brand text-light navbar-center"> Movie Booking System </a>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+
+				<form class="searchForm" >
+					<input class="inputBar" type="text" placeholder="Search" name="searchMovies">
+					<button class="magGlass" type="submit"><i class="searchIcon fa fa-search"></i></button>
+				</form> 
+			</ul>
+		</div>
+	</nav>
+	
+	
+	<div id="wrapper">
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper" class="bg-dark border-right border-dark">
+			<ul class="sidebar-nav navbar-dark bg-dark">
+				<li> <a href="../src/SearchMovie.html"> Search Movies </a> </li>
+				<li> <a href="#">Dashboard</a> </li>
+				<li> <a href="#">Book Movie</a> </li>
+				<li> <a href="#">User Profile</a> </li>
+				<li> <a href="#">New Movies</a> </li>
+				<li> <a href="#">Upcoming promotions</a> </li>
+				<li> <a href="#">Movie Theatres</a> </li>
+				<li> <a href="#">Contact</a> </li>
+			</ul>
+		</div> <!-- /#sidebar-wrapper -->
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+          
+			<header class="text-center pt-4 pb-3 ">
+            </header>					 
+				
+				<!-- Page Content -->
+			<div class="top-content">
+						<form action = "registercontroller.php" method = "post">
+							<div class="container-fluid" >
+								<h1 type="trial">Registration Page</h1>
+								<label class="inputArea">User Info</label> <br>
+								<label class="inputTag" for="first-name">First Name:</label> <br>
+								<input class="inputType" type="text" name="fname" id="first-name" placeholder="John" required /><br>
+								<label class="inputTag" for="last-name">Last Name:</label><br>
+								<input class="inputType" type="text" name="lname" id="last-name" placeholder="Smith" required /><br>
+
+								<label class="inputTag" for="email">Email:</label><br>
+								<input class="inputType" type="email" name="email" id="email" required placeholder="johnsmith@example.com"><br>
+
+								<label class="inputTag" for="password">Password:</label><br>
+								<input class="inputType" type="password" name="password" id="password" pattern=".{5,10}" placeholder="your password" required title="5 to 10 characters"><br>
+
+								<input type="checkbox" name="checkbox" id="checkbox" value = "yes"/>
+								<label for="checkbox" required >I wish to subscribe to promotions</label><br>
+								
+								<hr>
+								
+								<label class="inputArea" for="address">Address:</label><br>
+								
+								<label class="inputTag" for="address">Street:</label><br>
+								<input class="inputType" type="text" name="street" id="street"  placeholder= "4050 SoftWay" /><br>
+								
+								<label class="inputTag" for="address">City:</label><br>
+								<input class="inputType" type="text" name="city" id="city"  placeholder= "Random" /><br>
+								
+								<label class="inputTag" for="address">State:</label><br>
+								<input class="inputType" type="text" name="state" id="state"  placeholder= "NJ" /><br>
+								
+								<label class="inputTag" for="address">Zip Code:</label><br>
+								<input class="inputType" type="text" name="zip" id="zip"  placeholder= "12345" /><br>
+								
+								<hr>
+								
+								<label class="inputArea" for="credit">Credit Card Information:</label><br>
+								<label class="inputTag" for="creditNo">Credit Card Number:</label><br>
+								<input class="inputType" type="text" name="creditCardNum" id="number"  placeholder= "1111 2222 3333 4444" /><br>
+								
+								<label class="inputTag" for="expDate">Expiration Date (mm-yyyy):</label><br>
+								<input class="inputType" type="text" name="exp" id="expdate"  placeholder= "08/1997" /><br>
+								
+								 /><br>
+								
+								<hr>
+								
+								<label class="inputArea" for="sec">Security Question:</label><br>
+								<label class="inputTag" for="sec">What is Cameron's favorite color?</label><br>
+								<input class="inputType" type="text" name="security" id="security"  placeholder= "" /><br>
+
+
+								<!--<input type="button" value="Submit" onclick = "confirmation.href = ../src/RegistrationConfirmation.html"></input><br>-->
+								<!--change this to the forgot passwords page.-->
+								<button type="submit" class="btn btn-success" value = "Submit">Submit</button>
+								
+							</div>
+						</form>
+			</div>
+				<!-- /.container -->
+		</div> <!-- /#page-content-wrapper -->
+	</div> <!-- /#wrapper -->
+	<!-- Bootstrap core JavaScript -->
+	<!-- Menu Toggle Script -->
+	<script>
+		$(function(){
+			$("#menu-toggle").click(function(e) {
+				e.preventDefault();
+				$("#wrapper").toggleClass("toggled");
+			});
+	/*
+			$(window).resize(function(e) {
+				if($(window).width()<=768){
+					$("#wrapper").removeClass("toggled");
+				}else{
+					$("#wrapper").addClass("toggled");
+				}
+			});*/
+		});
+
+	</script>
+	<script>
+	$('#carousel').on('slide.bs.carousel', function (e) {
+		var $e = $(e.relatedTarget);
+		var index = $e.index();
+		var numItems = 5;
+		var totalItems = $('.carousel-item').length;
+		var sub = 1;
+		
+		if (index >= totalItems-(numItems-sub)) {
+			var vt = numItems - (totalItems - index);
+			for (var i=0; i<vt; i++) {
+				if (e.direction=="left") {
+					$('.carousel-item').eq(i).appendTo('.carousel-inner');
+				}
+				else {
+					$('.carousel-item').eq(0).appendTo('.carousel-inner');
+				}
+			}
+		}
+	});
+	</script>
+
+
+	</html>

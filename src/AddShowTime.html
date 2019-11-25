@@ -1,0 +1,207 @@
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<head>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/cardStyle.css">	
+	<!--<link rel="stylesheet" href="../css/styling.css"> -->
+</head>
+
+
+	<nav class="navbar navbar-expand navbar-dark bg-dark sticky-top border-bottom border-dark"> <a href="#menu-toggle" id="menu-toggle" class="navbar-brand"><span class="navbar-toggler-icon"></span></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+		<div class="collapse navbar-collapse" id="navbarsExample02">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"> <a class="nav-link" href="homepageTemp.php">Home <span class="sr-only">(current)</span></a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../src/Registration.html">Register</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="../src/Login.html">Login</a> </li>
+				<a class="navbar-brand text-light navbar-center"> Movie Booking System </a>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+
+				<form class="searchForm" >
+					<input class="inputBar" type="text" placeholder="Search" name="searchMovies">
+					<button class="magGlass" type="submit"><i class="searchIcon fa fa-search"></i></button>
+				</form> 
+			</ul>
+		</div>
+	</nav>
+
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="bg-dark border-right border-dark">
+        <ul class="sidebar-nav navbar-dark bg-dark">
+            <li> <a href="../src/SearchMovie.html"> Search Movies </a> </li>
+            <li> <a href="#">Dashboard</a> </li>
+            <li> <a href="#">Book Movie</a> </li>
+            <li> <a href="#">User Profile</a> </li>
+            <li> <a href="#">New Movies</a> </li>
+            <li> <a href="#">Upcoming promotions</a> </li>
+            <li> <a href="#">Movie Theatres</a> </li>
+            <li> <a href="#">Contact</a> </li>
+        </ul>
+    </div> <!-- /#sidebar-wrapper -->
+
+	<style>
+		.showtimes {
+			background-color: #222;
+			margin-left: 10px;
+			border-radius: 10px;
+			padding: 15px;
+			padding-right: 0px;
+			color: white;
+			width: 28%
+			
+		}
+		.header {
+			text-align: center;
+		}
+		.labelText {
+			font-weight: bold;
+		}
+		input[type=number]{
+			border: 2px solid #333;
+			height: 40px;
+			margin-top: 10px;
+		}
+		input[type=date]{
+			border: 2px solid #333;
+			height: 40px;
+			
+		}
+		.custom-control {
+			padding-bottom: 2px;
+		}
+		
+		.submitButton {
+			margin-right: 40px !important;
+			padding-left: 10px !important;
+			padding-right: 10px !important;
+		}
+		.returnButton {
+			padding-left: 10px !important;
+			padding-right: 10px !important;
+		}
+		.container-fluid {
+			width: 50%;
+		}
+.showDetails {
+			width: 65%;
+}
+.homeIcon{
+color: blue !important;
+border-style: none !important;
+cursor: pointer !important;  
+font-size: 20px;
+padding:3px !important;
+margin-right: 3px !important;
+
+} 
+.fa-plus{
+color: tomato !important;
+border-style: none !important;
+cursor: pointer !important;  
+font-size: 20px;
+padding:3px !important;
+margin-right: 3px !important;
+
+} 
+
+	</style>	
+		<header class="text-center pt-3 pb-2 ">
+
+			<div class="container">
+				<p class="font-weight-light text-white" align="left"><font size = "5"></font></p>
+			</div>
+		</header>
+				
+	<div class="container-fluid">  
+
+		<div class="header">
+		<h3>Schedule Movie Showtimes</h3>
+		<br>
+		</div>
+		<div class = "AddMovieArea">
+			<form action = "addShowTime.php" id = "AddMovie" method = "POST">
+				  				  
+				<div class="row">
+					<div class="showDetails">
+						<div class="AssignedShowroom">
+							<b>Assigned Showroom:</b><input type="number" class="showroomNum" name="showroom" min="1">					
+						</div>
+						<div class="AssignedDates">
+							<b>Premier Date:</b>
+							<input type="date" name="startDate" min='2019-01-01' max='2020-12-31'>
+							<b>End Runtime Date:</b>
+							<input type="date" name="endDate">
+						</div>
+					</div>
+					<div class="showtimes">
+							<div class="custom-control custom-radio">
+							  <input type="checkbox" class="custom-control-input" id="12" name="times" value = "11:00">
+							  <label class="custom-control-label" for="12">12:00 PM</label>
+							</div>
+							<div class="custom-control custom-radio">
+							  <input type="checkbox" class="custom-control-input" id="1" name="times" value = "1:00">
+							  <label class="custom-control-label" for="1">1:00 PM</label>
+							</div>
+							<div class="custom-control custom-radio">
+							  <input type="checkbox" class="custom-control-input" id="2" name="times" value = "1:00">
+							  <label class="custom-control-label" for="2">2:00 PM</label>
+							</div>
+							<div class="custom-control custom-radio">
+							  <input type="checkbox" class="custom-control-input" id="3" name="times" value = "3:00">
+							  <label class="custom-control-label" for="3">3:00 PM</label>
+							</div>
+							<div class="custom-control custom-radio">
+							  <input type="checkbox" class="custom-control-input" id="4" name="times" value = "3:00">
+							  <label class="custom-control-label" for="4">4:00 PM</label>
+							</div>
+							<div class="custom-control custom-radio">
+							  <input type="checkbox" class="custom-control-input" id="5" name="times" value = "5:00">
+							  <label class="custom-control-label" for="5">5:00 PM</label>
+							</div>
+							<div class="custom-control custom-radio">
+							  <input type="checkbox" class="custom-control-input" id="6" name="times" value = "5:00">
+							  <label class="custom-control-label" for="6">6:00 PM</label>
+							</div>
+							<div class="custom-control custom-radio">
+							  <input type="checkbox" class="custom-control-input" id="7" name="times" value = "7:00">
+							  <label class="custom-control-label" for="7">7:00 PM</label>
+							</div>
+							<div class="custom-control custom-radio">
+							  <input type="checkbox" class="custom-control-input" id="8" name="times" value = "7:00">
+							  <label class="custom-control-label" for="8">8:00 PM</label>
+							</div>
+
+					</div>
+				</div>
+				<div class="row buttonArea">
+					<div id="ChangeStatus">
+						<button type="submit" class="submitButton AddCart  btn-block btn btn-dark"><i class="plusIcon fas fa-plus"></i>Add Showtime</button> 
+					</div>
+					&nbsp &nbsp
+					<div id="return">
+						<button onclick="window.location.href = '../src/AdminPortal.html';" class="returnButton AddCart  btn-block btn btn-dark"><i class="homeIcon fas fa-home"></i>Return Home</button> 
+					</div>
+				</div>
+			</form>
+		</div>
+
+	  
+	</div>
+</div>
+
+<script>
+    $(function(){
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    });
+</script>

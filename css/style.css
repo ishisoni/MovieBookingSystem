@@ -1,0 +1,89 @@
+html {
+    height: 100%;
+}
+
+body{
+	height: auto;
+	background:  -webkit-linear-gradient( #e51937, #000000);
+	background-repeat: no-repeat;
+	height: 100%;
+}
+.grid-container{
+	margin: 20px auto;
+	left: 0;
+	right:0;
+	width:70%;
+	padding: 30px;
+	background: white;
+	color: #6C757D;
+	text-align: left;
+	display: inline-block;
+	position: absolute;
+	box-sizing:border-box;
+	border-radius: 20px;	
+	font-family: "Arial", Arial, Sans-serif;
+}
+
+.grid-container h1{
+	text-align: center;
+}
+
+.login h1[type="trial"]{
+	text-align: center;
+}
+
+.login trial{
+	text-align: center;
+	display: inline-block;
+}
+
+.login input[type="text"], input[type="password"]{
+	width: 100%;
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #6C757D;
+	background: transparent;
+	outline: none;
+	height: 20px;
+	color: #6C757D;
+}
+
+::placeholder {
+  color: #bdbdbd;
+}
+
+.login p[type="textt"], p[type="passt"]{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.login button[type="submit"] {
+	width:100%;
+	margin-bottom: 10px;
+	background-color: #222;
+	border: 1px solid #6C757D;
+	color: white;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	border-radius: 12px;
+}
+
+
+.login button[type="button"],  button[type="button1"]{
+	background-color: transparent;
+	color: #6C757D;
+	border: none;
+	text-decoration: underline;
+}
+
+.login button[type="submit"]:hover {
+	background-color: #4e4e4e;
+}
+
+.login a{
+	margin-left:0px !important;
+}
+
