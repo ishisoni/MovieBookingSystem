@@ -6,4 +6,4 @@ This was a group project. The contributors for this website are:
 Ishita Soni (www.github.com/ishson19),
 Kirtana Nidamarti (www.github.com/kn-99),
 Blake Manus (www.github.com/blake-manus),
-Cameron Pipes (www.github.com/Cpipes8899)
+Cameron Pipes (www.github.com/Cpipes8899) 
