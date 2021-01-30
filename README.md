@@ -9,12 +9,14 @@ Blake Manus (www.github.com/blake-manus),
 Cameron Pipes (www.github.com/Cpipes8899) 
 
 
-# Preview
+# Main View
+![Main](https://i.postimg.cc/Z5tCw4zx/movie1.png)
 
-![Main View](https://i.postimg.cc/Z5tCw4zx/movie1.png)
+# Movie Details
+![Details](https://i.postimg.cc/zfWm0Y5K/movie6.png)
 
-![Movie Details](https://i.postimg.cc/zfWm0Y5K/movie6.png)
+# Checkout
+![Checkout View](https://i.postimg.cc/C1Y27Zcp/movie12.png)
 
-![Checkout](https://i.postimg.cc/C1Y27Zcp/movie12.png)
-
-![User Page](https://i.postimg.cc/05V4Gymh/movie24.png)
+# User Page
+![User Page View](https://i.postimg.cc/05V4Gymh/movie24.png)
